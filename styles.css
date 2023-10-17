@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    font-family: Monaco, serif;
+}
+
+body{
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+}
+
+.modal {
+    height: 80vh;
+    background-color: white;
+    width: 900px;
+    max-width: 80%;
+    overflow: auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem .5rem 1rem;
+    border-bottom: 1px solid #777;
+}
+
+.modal-header .title {
+    font-size: 1.5rem; 
+    padding-top: 1rem;
+}
+
+.modal-header .close-button {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    align-self: flex-start;
+    padding-top: .5rem;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 1rem;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #777;
+    padding: .5rem;
+    gap: .5rem;
+}
+
+.modal-footer .btn {
+    margin-right: .5rem;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    color: white; 
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.button-primary {
+    background-color: #1CA;
+}
+
+.button-primary, .button-primary:focus {
+    background-color: #1CA;
+}
